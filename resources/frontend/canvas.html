@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canvas with Colored Bottom and Text Overlay</title>
+<style>
+@font-face {
+  font-family: 'MyLocalFont';
+  src: url('Roboto-Light.ttf') format('truetype');
+}
+.canvas {
+  position: relative;
+  height: 700px;
+  background-color: #EEEDEB;
+  font-family: 'MyLocalFont', Arial, sans-serif;
+  margin: 0 auto;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  z-index: 10;
+}
+.subject {
+  top: 4%;
+  font-size: 30px;
+  color: #CFA67D;
+}
+.name {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: #CFA67D;
+  text-align: center;
+}
+.contribution {
+  top: 80%;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.footer {
+  top: 95%;
+  font-size: 18px;
+  color: #CFA67D;
+}
+.bottom-color {
+  position: absolute;
+  width: 100%;
+  height: 28%;
+  bottom: 0;
+  background-color: #5E2931;
+  z-index: 5;
+}
+.image-container {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  display: inline-block;
+  max-height: 370px; /* 确保不超过指定高度 */
+  width: auto; /* 保持宽度自适应 */
+  object-fit: cover; /* 保持图像比例 */
+}
+
+</style>
+</head>
+<body>
+  <div class="canvas" id="canvas">
+    <div class="bottom-color"></div>
+    <div class="image-container">
+      <img src="/Users/wzc/Desktop/Utils/NobelPriceAgent/c16b1e88-dca0-4139-84ae-1afeb893f5d3.png" alt="Elon Musk" id="img1">
+    </div>
+    <div class="text subject">THE NOBEL PRIZE IN PHYSICS 2024</div>
+    <div class="text name">Iron Man</div>
+    <div class="text contribution">”哥们发现了新元素，你呢？“</div>
+    <div class="text footer">THE ROYAL EVERYONE NOBEL</div>
+  </div>
+<script>
+  window.onload = function() {
+    const img1 = document.getElementById('img1');
+    const canvas = document.getElementById('canvas');
+
+    // 设置图片高度
+    const maxHeight = 370; // 设置最大高度
+    img1.style.height = maxHeight + 'px';
+
+    // 计算图片的宽度并设置 canvas 的宽度
+    const totalWidth = img1.offsetWidth;
+    canvas.style.width = totalWidth + 'px'; // 设置 canvas 的宽度
+
+    // 创建一个画布用于获取图像数据
+    const tempCanvas = document.createElement('canvas');
+    const context = tempCanvas.getContext('2d');
+    tempCanvas.width = img1.width;
+    tempCanvas.height = img1.height;
+
+    // 将图片绘制到临时画布上
+    context.drawImage(img1, 0, 0);
+
+    // 获取图片最上面一行的像素数据
+    const imageData = context.getImageData(0, 0, tempCanvas.width, 1);
+    const data = imageData.data;
+
+    // 计算颜色出现频率
+    const colorCount = {};
+    for (let i = 0; i < data.length; i += 4) {
+      const color = `rgb(${data[i]},${data[i+1]},${data[i+2]})`;
+      colorCount[color] = (colorCount[color] || 0) + 1;
+    }
+
+    // 找到出现频率最高的颜色
+    let maxColor = '';
+    let maxCount = 0;
+    for (const color in colorCount) {
+      if (colorCount[color] > maxCount) {
+        maxCount = colorCount[color];
+        maxColor = color;
+      }
+    }
+
+    // 设置 canvas 背景颜色
+    canvas.style.backgroundColor = maxColor;
+  };
+</script>
+</body>
+</html>

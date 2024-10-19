@@ -1,0 +1,515 @@
+{
+  "8": {
+    "inputs": {
+      "samples": [
+        "137",
+        0
+      ],
+      "vae": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "28": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "width": 1024,
+      "height": 1024,
+      "crop": "center",
+      "image": [
+        "110",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "Upscale Image"
+    }
+  },
+  "35": {
+    "inputs": {
+      "vae_name": "sdxlVAE_sdxlVAE.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "71": {
+    "inputs": {
+      "strength": 0.6,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "76",
+        0
+      ],
+      "negative": [
+        "76",
+        1
+      ],
+      "control_net": [
+        "131",
+        0
+      ],
+      "image": [
+        "145",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet (Advanced)"
+    }
+  },
+  "76": {
+    "inputs": {
+      "strength": 0.9,
+      "start_percent": 0,
+      "end_percent": 0.8,
+      "positive": [
+        "128",
+        0
+      ],
+      "negative": [
+        "129",
+        0
+      ],
+      "control_net": [
+        "130",
+        0
+      ],
+      "image": [
+        "155",
+        0
+      ]
+    },
+    "class_type": "ControlNetApplyAdvanced",
+    "_meta": {
+      "title": "Apply ControlNet (Advanced)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "pixels": [
+        "28",
+        0
+      ],
+      "vae": [
+        "35",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "103": {
+    "inputs": {
+      "invert_mask": false,
+      "detect": "mask_area",
+      "top_reserve": 50,
+      "bottom_reserve": 50,
+      "left_reserve": 50,
+      "right_reserve": 50,
+      "image": [
+        "104",
+        0
+      ],
+      "mask_for_crop": [
+        "138",
+        1
+      ]
+    },
+    "class_type": "LayerUtility: CropByMask",
+    "_meta": {
+      "title": "LayerUtility: CropByMask"
+    }
+  },
+  "104": {
+    "inputs": {
+      "image": "858825fafb0fad48442506f3329cef28.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "110": {
+    "inputs": {
+      "fill_background": true,
+      "background_color": "#ffffff",
+      "RGBA_image": [
+        "146",
+        0
+      ],
+      "mask": [
+        "146",
+        1
+      ]
+    },
+    "class_type": "LayerUtility: ImageRemoveAlpha",
+    "_meta": {
+      "title": "LayerUtility: ImageRemoveAlpha"
+    }
+  },
+  "111": {
+    "inputs": {
+      "action": "pad to ratio",
+      "smaller_side": 0,
+      "larger_side": 0,
+      "scale_factor": 0,
+      "resize_mode": "any",
+      "side_ratio": "1:1",
+      "crop_pad_position": 0.5,
+      "pad_feathering": 20,
+      "pixels": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "ImageResize",
+    "_meta": {
+      "title": "Image Resize"
+    }
+  },
+  "128": {
+    "inputs": {
+      "text": "masterpiece,High quality，Nobel_Prizes_style,monochrome,bold black lines，2d retro illustration, watercolor, pencil crayon，Portrait illustration, this illustration is outlined with bold black lines, highlighted colors include shades of brown, black, and the background is a simple light color. The portrait shows the half.(young man:1.8)",
+      "parser": "A1111",
+      "mean_normalization": true,
+      "multi_conditioning": false,
+      "use_old_emphasis_implementation": false,
+      "with_SDXL": false,
+      "ascore": 6,
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 1024,
+      "target_height": 1024,
+      "text_g": "",
+      "text_l": "",
+      "smZ_steps": 1,
+      "clip": [
+        "133",
+        0
+      ]
+    },
+    "class_type": "smZ CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode++"
+    }
+  },
+  "129": {
+    "inputs": {
+      "text": "yellow face，nsfw, lowres, (bad), text, error, fewer, extra, missing,\n\nworst quality, jpeg artifacts, low quality, watermark,\n\nunfinished, displeasing, oldest, early, chromatic aberration,\n\nsignature, extra digits, artistic error, username, scan, [abstract]，\n\n(Shape is not compact, loose, weak volume, flat, thin, weak texture, no volume :1.3),\n\nWeak color, no color space, low level contrast,\n",
+      "parser": "A1111",
+      "mean_normalization": true,
+      "multi_conditioning": false,
+      "use_old_emphasis_implementation": false,
+      "with_SDXL": false,
+      "ascore": 6,
+      "width": 1024,
+      "height": 1024,
+      "crop_w": 0,
+      "crop_h": 0,
+      "target_width": 1024,
+      "target_height": 1024,
+      "text_g": "",
+      "text_l": "",
+      "smZ_steps": 1,
+      "clip": [
+        "133",
+        0
+      ]
+    },
+    "class_type": "smZ CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode++"
+    }
+  },
+  "130": {
+    "inputs": {
+      "control_net_name": "mistoLine_fp16.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "131": {
+    "inputs": {
+      "control_net_name": "iffusion_pytorch_model_promax.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "132": {
+    "inputs": {
+      "ckpt_name": "dreamshaperXL_alpha2Xl10.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "133": {
+    "inputs": {
+      "stop_at_clip_layer": -6,
+      "clip": [
+        "135",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer",
+    "_meta": {
+      "title": "CLIP Set Last Layer"
+    }
+  },
+  "135": {
+    "inputs": {
+      "lora_01": "None",
+      "strength_01": 0.8,
+      "lora_02": "XL_Nobel_Prizes_style-000005.safetensors",
+      "strength_02": 0.8,
+      "lora_03": "None",
+      "strength_03": 0.03,
+      "lora_04": "None",
+      "strength_04": 0.2,
+      "model": [
+        "132",
+        0
+      ],
+      "clip": [
+        "132",
+        1
+      ]
+    },
+    "class_type": "Lora Loader Stack (rgthree)",
+    "_meta": {
+      "title": "Lora Loader Stack (rgthree)"
+    }
+  },
+  "137": {
+    "inputs": {
+      "seed": 414577579665607,
+      "steps": 30,
+      "cfg": 10,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "135",
+        0
+      ],
+      "positive": [
+        "71",
+        0
+      ],
+      "negative": [
+        "71",
+        1
+      ],
+      "latent_image": [
+        "153",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "138": {
+    "inputs": {
+      "prompt": "human",
+      "threshold": 0.3,
+      "sam_model": [
+        "140",
+        0
+      ],
+      "grounding_dino_model": [
+        "139",
+        0
+      ],
+      "image": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "GroundingDinoSAMSegment (segment anything)",
+    "_meta": {
+      "title": "GroundingDinoSAMSegment (segment anything)"
+    }
+  },
+  "139": {
+    "inputs": {
+      "model_name": "GroundingDINO_SwinB (938MB)"
+    },
+    "class_type": "GroundingDinoModelLoader (segment anything)",
+    "_meta": {
+      "title": "GroundingDinoModelLoader (segment anything)"
+    }
+  },
+  "140": {
+    "inputs": {
+      "model_name": "sam_vit_h (2.56GB)"
+    },
+    "class_type": "SAMModelLoader (segment anything)",
+    "_meta": {
+      "title": "SAMModelLoader (segment anything)"
+    }
+  },
+  "145": {
+    "inputs": {
+      "detect_hand": "enable",
+      "detect_body": "enable",
+      "detect_face": "enable",
+      "resolution": 2048,
+      "scale_stick_for_xinsr_cn": "enable",
+      "image": [
+        "110",
+        0
+      ]
+    },
+    "class_type": "OpenposePreprocessor",
+    "_meta": {
+      "title": "OpenPose Pose"
+    }
+  },
+  "146": {
+    "inputs": {
+      "prompt": "human",
+      "threshold": 0.3,
+      "sam_model": [
+        "148",
+        0
+      ],
+      "grounding_dino_model": [
+        "147",
+        0
+      ],
+      "image": [
+        "111",
+        0
+      ]
+    },
+    "class_type": "GroundingDinoSAMSegment (segment anything)",
+    "_meta": {
+      "title": "GroundingDinoSAMSegment (segment anything)"
+    }
+  },
+  "147": {
+    "inputs": {
+      "model_name": "GroundingDINO_SwinB (938MB)"
+    },
+    "class_type": "GroundingDinoModelLoader (segment anything)",
+    "_meta": {
+      "title": "GroundingDinoModelLoader (segment anything)"
+    }
+  },
+  "148": {
+    "inputs": {
+      "model_name": "sam_vit_h (2.56GB)"
+    },
+    "class_type": "SAMModelLoader (segment anything)",
+    "_meta": {
+      "title": "SAMModelLoader (segment anything)"
+    }
+  },
+  "153": {
+    "inputs": {
+      "width": [
+        "154",
+        0
+      ],
+      "height": [
+        "154",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "154": {
+    "inputs": {
+      "image": [
+        "28",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+",
+    "_meta": {
+      "title": "🔧 Get Image Size"
+    }
+  },
+  "155": {
+    "inputs": {
+      "guassian_sigma": 6,
+      "intensity_threshold": 8,
+      "resolution": 2048,
+      "image": [
+        "110",
+        0
+      ]
+    },
+    "class_type": "LineartStandardPreprocessor",
+    "_meta": {
+      "title": "Standard Lineart"
+    }
+  },
+  "161": {
+    "inputs": {
+      "brightness": 1.1,
+      "contrast": 1.35,
+      "saturation": 1.2,
+      "image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "LayerColor: Brightness & Contrast",
+    "_meta": {
+      "title": "LayerColor: Brightness & Contrast"
+    }
+  },
+  "162": {
+    "inputs": {
+      "amount": 0.8,
+      "image": [
+        "161",
+        0
+      ]
+    },
+    "class_type": "ImageCASharpening+",
+    "_meta": {
+      "title": "🔧 Image Contrast Adaptive Sharpening"
+    }
+  },
+  "164": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "162",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

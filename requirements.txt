@@ -1,0 +1,4 @@
+pypinyin==0.53.0
+openai==1.40.3
+beautifulsoup4==4.12.3
+python-dotenv

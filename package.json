@@ -1,0 +1,15 @@
+{
+  "name": "convert-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resources/frontend/index.js",
+  "scripts": {
+    "dev": "node resources/frontend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.5.1"
+  }
+}
