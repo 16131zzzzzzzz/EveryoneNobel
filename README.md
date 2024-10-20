@@ -63,11 +63,7 @@ Parameter Explanations:
 <table>
   <tr>
     <td><a href="https://github.com/16131zzzzzzzz"><img src="https://github.com/16131zzzzzzzz.png" width="60px;"/></a></td>
-  </tr>
-  <tr>
     <td><a href="https://github.com/AudareLesdent"><img src="https://github.com/AudareLesdent.png" width="60px;"/></a></td>
-  </tr>
-  <tr>
     <td><a href="https://github.com/AlchemistZoro"><img src="https://github.com/AlchemistZoro.png" width="60px;"/></a></td>
   </tr>
 </table>
