@@ -25,6 +25,11 @@ npm install
 pip install -r requirements.txt
 ```
 
+### 3. write .env
+Create a `.env` file in the main folder with the following content:
+``` shell
+API_KEY=YOUR_OPENAI_API_KEY
+```
 
 ## Quick Start
 
@@ -47,6 +52,12 @@ python main.py \
   --image_path "resources/test/test.jpg" \
   --comfy_server_address "127.0.0.1:6006"
 ```
+Parameter Explanations:
+- `--name`: The name of the individual.
+- `--subject`: The subject of the prize.
+- `--content`: Description contribution of the individual. (AI will use this to generate the text at the bottom of the image)
+- `--image_path "resources/test/test.jpg"`: The file path of the input image
+- `--comfy_server_address "127.0.0.1:6006"`: Sets the address of the ComfyUI server that will handle the image generation.
 
 ## Contributors
 <table>
