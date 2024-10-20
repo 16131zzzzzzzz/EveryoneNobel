@@ -66,5 +66,6 @@ Parameter Explanations:
     <td><a href="https://github.com/AudareLesdent"><img src="https://github.com/AudareLesdent.png" width="60px;"/></a></td>
     <td><a href="https://github.com/AlchemistZoro"><img src="https://github.com/AlchemistZoro.png" width="60px;"/></a></td>
     <td><a href="https://github.com/bs001l"><img src="https://github.com/bs001l.png" width="60px;"/></a></td>
+    <td><a href="https://github.com/zhoulele12"><img src="https://github.com/zhoulele12.png" width="60px;"/></a></td>
   </tr>
 </table>
