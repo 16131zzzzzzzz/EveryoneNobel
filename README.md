@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <h1> EveryoneNobel </h1>
+    <h1> &#127942 EveryoneNobel </h1>
     <img height="300" src="resources/readme/overview.png" />
 </div>
 
@@ -49,4 +49,8 @@ python main.py \
 ```
 
 ## Contributors
-
+<table>
+  <tr>
+    <td><a href="https://github.com/16131zzzzzzzz"><img src="https://github.com/16131zzzzzzzz.png" width="60px;"/></a></td>
+  </tr>
+</table>
