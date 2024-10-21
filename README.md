@@ -16,7 +16,7 @@ EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes 
 
 ## Requirements
 ### 1. Install ComfyUI
-Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow.json`.
+Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
 
 ### 2. Install requirements
 ``` shell
