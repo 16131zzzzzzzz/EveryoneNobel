@@ -14,6 +14,8 @@
 
 EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
 
+You could generate the picture without text [here](https://civitai.com/models/875184?modelVersionId=979771).
+
 ## Requirements
 ### 1. Install ComfyUI
 Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
