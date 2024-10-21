@@ -12,6 +12,10 @@
 
 ## Overview
 
+<div align="center">
+    <img width="600" src="resources/readme/result_allinone_small.png" />
+</div>
+
 EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
 
 You could generate the picture without text [here](https://civitai.com/models/875184?modelVersionId=979771).
