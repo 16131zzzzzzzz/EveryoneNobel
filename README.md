@@ -31,7 +31,7 @@ npm install
 pip install -r requirements.txt
 ```
 
-### 3. write .env
+### 3. write .env (optional when using main_without_openai.py) 
 Create a `.env` file in the main folder with the following content:
 ``` shell
 API_KEY=YOUR_OPENAI_API_KEY
@@ -64,6 +64,16 @@ Parameter Explanations:
 - `--content`: Description contribution of the individual. (AI will use this to generate the text at the bottom of the image)
 - `--image_path "resources/test/test.jpg"`: The file path of the input image
 - `--comfy_server_address "127.0.0.1:6006"`: Sets the address of the ComfyUI server that will handle the image generation.
+
+(NEW) Example for not using openai api to generate text:
+```shell
+python main_without_openai.py \
+  --name "somebody" \
+  --subject "2024 nobel prize" \
+  --content "Do nothing" \
+  --image_path "resources/test/test.jpg" \
+  --comfy_server_address "127.0.0.1:6006"
+```
 
 ## Contributors
 <table>
