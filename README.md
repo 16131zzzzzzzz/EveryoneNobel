@@ -10,6 +10,10 @@
 | **[Overview](#overview)** | **[Requirements](#requirements)** | **[Quick Start](#quick-start)** | **[Contributors](#contributors)** |
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=16131zzzzzzzz/EveryoneNobel&type=Date)](https://star-history.com/#16131zzzzzzzz/EveryoneNobel&Date)
+
 ## Overview
 
 EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
