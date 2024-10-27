@@ -10,7 +10,7 @@
 | **[Overview](#overview)** | **[News](#news)** | **[Requirements](#requirements)** | **[Quick Start](#quick-start)** | **[Contributors](#contributors)** |
 </div>
 
-## Overview
+## 💡 Overview
 
 EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
 
@@ -22,7 +22,7 @@ You could generate the picture without text [here](https://civitai.com/models/87
     <img width="800" src="resources/readme/result_allinone_small.png" />
 </div>
 
-## News
+## 🔥 News
 - Some issues have mentioned the workflow problems. A new file `nobel_workflow_for_install.json` here in `resources/workflow/` used for missing node installation.
 - Quick Start step 1 readme has been adapted. The ComfyUI server need to use the python inside ComfyUI.
 - Our QQ group 515375254 is now open! You're welcome to join for discussions on all issues.
@@ -31,7 +31,7 @@ You could generate the picture without text [here](https://civitai.com/models/87
     <img width="300" src="resources/readme/qq.JPG" />
 </div>
 
-## Requirements
+## 🎬 Requirements
 ### 1. Install ComfyUI
 Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow_for_install.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
 
@@ -48,7 +48,7 @@ Create a `.env` file in the main folder with the following content:
 API_KEY=YOUR_OPENAI_API_KEY
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Start ComfyUI server
 An example for starting the server.
@@ -88,7 +88,7 @@ python main_without_openai.py \
   --comfy_server_address "127.0.0.1:6006"
 ```
 
-## Contributors
+## 🔧 Contributors
 <table>
   <tr>
     <td><a href="https://github.com/16131zzzzzzzz"><img src="https://github.com/16131zzzzzzzz.png" width="60px;"/></a></td>
@@ -99,6 +99,6 @@ python main_without_openai.py \
   </tr>
 </table>
 
-## Star History
+## 🏄 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=16131zzzzzzzz/EveryoneNobel&type=Date)](https://star-history.com/#16131zzzzzzzz/EveryoneNobel&Date)
