@@ -34,9 +34,9 @@ You could generate the picture without text [here](https://civitai.com/models/87
 
 ## 🎬 Requirements
 ### 1. Install ComfyUI
-Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow_for_install.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
+Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow_for_install.json`. Run the workflow to check if the installation is successful. Then save the API format workflow json and replace `resources/workflow/nobel_workflow.json`.
 
-More details about the models can be found in [ComfyUI Models](README_model.md).
+This process is quite complex so we give out more details in [ComfyUI Models](README_model.md).
 
 ### 2. Install requirements
 ``` shell
