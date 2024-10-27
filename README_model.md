@@ -37,4 +37,12 @@ link：https://pan.quark.cn/s/da810e21331e
 path: `models/vae`
 
 ## 2. Adapt the model paths
-Adapt the model paths in the workflow to the new path.
+Adapt the model paths in the workflow nodes to the your own path.
+
+[![sdxl and lora](https://img.picgo.net/2024/10/27/1280X1280-13420f8812ec103a9.png)](https://www.picgo.net/image/1280X1280-%281%29.oqa7JG)
+
+[![controlnets](https://img.picgo.net/2024/10/27/7fc490b0-5923-4dbc-a650-a3d31374050ee32f3f55b2429e59.png)](https://www.picgo.net/image/7fc490b0-5923-4dbc-a650-a3d31374050e.oqahXk)
+
+[![sam1](https://img.picgo.net/2024/10/27/7787472d-c1b0-4947-896b-928146f3aabba60dd8f63e87adf4.png)](https://www.picgo.net/image/7787472d-c1b0-4947-896b-928146f3aabb.oqaOlw)
+
+[![sam2](https://img.picgo.net/2024/10/27/15113787-baab-4a02-99ee-eccdd0011c11c978a7fda8fae2cd.png)](https://www.picgo.net/image/15113787-baab-4a02-99ee-eccdd0011c11.oqaF5l)
