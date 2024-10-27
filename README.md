@@ -24,7 +24,7 @@ You could generate the picture without text [here](https://civitai.com/models/87
 
 ## Requirements
 ### 1. Install ComfyUI
-Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
+Follow the instructions in [ComfyUI repo](https://github.com/comfyanonymous/ComfyUI) to install ComfyUI. Open ComfyUI and install the missing custom nodes and models for workflow in `resources/workflow/nobel_workflow_for_install.json`. Our lora model is [here](https://civitai.com/models/875184?modelVersionId=979771).
 
 ### 2. Install requirements
 ``` shell
@@ -46,8 +46,10 @@ An example for starting the server.
 
 ``` shell
 # cd to ComfyUI main folder
-python main.py --port 6006 --listen 0.0.0.0
+{ComfyUI_python} main.py --port 6006 --listen 0.0.0.0
 ```
+
+(NEW) The {ComfyUI_python} is the path to the python inside your ComfyUI. For me, it is the python.exe under python_embeded folder in ComfyUI.
 
 ### 2. Run main.py
 
