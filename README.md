@@ -7,7 +7,7 @@
 
 <div align="center">
 
-| **[Overview](#overview)** | **[Requirements](#requirements)** | **[Quick Start](#quick-start)** | **[Contributors](#contributors)** |
+| **[Overview](#overview)** | **[News](#news)** | **[Requirements](#requirements)** | **[Quick Start](#quick-start)** | **[Contributors](#contributors)** |
 </div>
 
 ## Overview
@@ -21,6 +21,13 @@ You could generate the picture without text [here](https://civitai.com/models/87
 <div align="center">
     <img width="800" src="resources/readme/result_allinone_small.png" />
 </div>
+
+## News
+- Some issues have mentioned the workflow problems. A new file `nobel_workflow_for_install.json` here in `resources/workflow/` used for missing node installation.
+- Quick Start step 1 readme has been adapted. The ComfyUI server need to use the python inside ComfyUI.
+- Our WeChat group is now open! You're welcome to join for discussions on all issues.
+
+
 
 ## Requirements
 ### 1. Install ComfyUI
