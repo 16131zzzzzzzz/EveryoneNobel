@@ -25,9 +25,11 @@ You could generate the picture without text [here](https://civitai.com/models/87
 ## News
 - Some issues have mentioned the workflow problems. A new file `nobel_workflow_for_install.json` here in `resources/workflow/` used for missing node installation.
 - Quick Start step 1 readme has been adapted. The ComfyUI server need to use the python inside ComfyUI.
-- Our WeChat group is now open! You're welcome to join for discussions on all issues.
+- Our QQ group 515375254 is now open! You're welcome to join for discussions on all issues.
 
-
+<div align="center">
+    <img width="400" src="resources/readme/qq.JPG" />
+</div>
 
 ## Requirements
 ### 1. Install ComfyUI
