@@ -48,7 +48,7 @@ Adapt the model paths in the workflow nodes below to the your own path.
 [![sam2](https://img.picgo.net/2024/10/27/15113787-baab-4a02-99ee-eccdd0011c11c978a7fda8fae2cd.png)](https://www.picgo.net/image/15113787-baab-4a02-99ee-eccdd0011c11.oqaF5l)
 
 ## 3. Save as API format
-Run ComfyUI locally in your browser. Once it’s running, go to the settings and enable the "Dev Mode Options". You can export the workflow in API format as a JSON file. Use this exported JSON to replace the original resources/workflow/nobel_workflow.json (don't change the json name).
+Run ComfyUI locally in your browser. !!!Delete all preview image node except the final output preview image!!!. Once it’s running, go to the settings and enable the "Dev Mode Options". You can export the workflow in API format as a JSON file. Use this exported JSON to replace the original resources/workflow/nobel_workflow.json (don't change the json name).
 
 [![Dev Mode](https://img.picgo.net/2024/10/27/PixPin_2024-10-27_13-48-00b778c961ae204a1f.png)](https://www.picgo.net/image/PixPin-2024-10-27-13-48-00.oqmTsi)
 
