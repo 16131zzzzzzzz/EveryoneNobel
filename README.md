@@ -23,6 +23,7 @@ You could generate the picture without text [here](https://civitai.com/models/87
 </div>
 
 ## 🔥 News
+- Added new requirements websocket-client==0.58.0
 - We upload the models to enable easier usage of ComfyUI. Readme here in [ComfyUI Models](README_model.md)
 - Some issues have mentioned the workflow problems. A new file `nobel_workflow_for_install.json` here in `resources/workflow/` used for missing node installation.
 - Quick Start step 1 readme has been adapted. The ComfyUI server need to use the python inside ComfyUI.
