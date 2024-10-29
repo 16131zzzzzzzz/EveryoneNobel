@@ -53,7 +53,7 @@ API_KEY=YOUR_OPENAI_API_KEY
 ```
 
 ## 🚀 Quick Start
-
+Make sure that you are familiar with ComfyUI and Python, or it will take a long time. If you are not familiar, try to use liblib or civitai.
 ### 1. Start ComfyUI server
 An example for starting the server.
 
