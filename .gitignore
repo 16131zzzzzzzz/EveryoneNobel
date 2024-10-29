@@ -1,6 +1,7 @@
 input
 output
 node_modules
+**/__pycache__
 
 .env
 package-lock.json
