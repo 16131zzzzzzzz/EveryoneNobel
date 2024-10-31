@@ -12,7 +12,7 @@
 
 ## 💡 Overview
 
-EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilizes ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
+EveryoneNobel aims to generate **Nobel Prize images for everyone**. We utilize ComfyUI for image generation and HTML templates to display text on the images. This project serves not only as a process for generating nobel images but also as **a potential universal framework**. This framework transforms the ComfyUI-generated visuals into final products, offering a structured approach for further applications and customization.
 
 We share how we build the entire app and sell the product in 30 hours in this blog [here](https://mp.weixin.qq.com/s/t3v-h1MzpFKuh0RCMRmjEg).
 
