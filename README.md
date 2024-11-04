@@ -30,7 +30,7 @@ You could generate the picture without text [here](https://civitai.com/models/87
 - Our QQ group 515375254 is now open! You're welcome to join for discussions on all issues.
 
 <div align="center">
-    <img width="300" src="resources/readme/qq.JPG" />
+    <img width="300" src="resources/readme/qq2.jpg" />
 </div>
 
 ## 🎬 Requirements
